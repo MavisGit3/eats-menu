@@ -108,18 +108,18 @@ export default function CartPage() {
                     key={item.id}
                     className="flex items-center border rounded-lg p-4 shadow-sm"
                   >
-                    <div className="w-20 h-20 rounded-md overflow-hidden flex-shrink-0 ">
+                    <div className="w-10 h-10 rounded-md overflow-hidden flex-shrink-0 md:w-20 md:h-20 ">
                       <Image
                         src={
                           item.image || "/placeholder.svg?height=300&width=400"
                         }
                         alt={item.name}
-                        width={20}
-                        height={20}
+                        width={50}
+                        height={50}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="ml-4 flex-grow">
+                    <div className="ml-2 flex-grow md:ml-4">
                       <h3 className="font-medium text-gray-900">{item.name}</h3>
                       <p className="text-sm text-gray-500">
                         {formatPrice(item.price)}
@@ -176,7 +176,7 @@ export default function CartPage() {
                 <h2 className="text-xl font-bold text-gray-900 mb-4">
                   Customer Information
                 </h2>
-                <div className="space-y-4 mb-6">
+                <div className="space-y-4 mb-6 ">
                   <div>
                     <Label htmlFor="customerName">Your Name</Label>
                     <Input
@@ -224,7 +224,7 @@ export default function CartPage() {
                     <span className="font-medium">{formatPrice(tax)}</span>
                   </div>
                   <div className="border-t pt-2 mt-2">
-                    <div className="flex justify-between font-bold">
+                    <div className="flex justify-between font-bold ">
                       <span>Total</span>
                       <span>{formatPrice(total)}</span>
                     </div>

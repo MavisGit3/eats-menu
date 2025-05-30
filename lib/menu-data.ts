@@ -59,7 +59,7 @@ export const menuData: {
   mainCourses: [
     {
       id: "main-1",
-      name: "Classic Cheeseburger",
+      name: "Classic Cheese burger",
       description: "Angus beef patty with cheddar, lettuce, tomato, and special sauce.",
       price: 12.99,
       image: "/images/apptiz burger.webp",
